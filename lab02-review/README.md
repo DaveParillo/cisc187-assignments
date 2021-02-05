@@ -133,7 +133,7 @@ double x = 2 * (2+3);
 Assign the result to x.*
 
 If an operator appears unfamiliar to you, refer to
-http://en.cppreference.com/w/cpp/
+https://en.cppreference.com/w/cpp/language/expressions#Operators
 
 a.  
 ```cpp
