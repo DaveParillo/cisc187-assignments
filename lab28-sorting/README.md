@@ -83,6 +83,14 @@ the sort that goes with it.
 Simply listing which buttons perform which sorts is not enough to
 earn credit.
 
+**Collecting data**
+
+The program will provide the following data, as an example:
+
+| Length (N) | Ordering | Sort  | Comparisons | Movements | Sort time(msec) |
+| ---        |  ---     | ----  | ----------- | --------- | --------------- |
+|32 | random | alpha | 496 | 687 | 0 |
+
 **Writing Notes**
 
 There is no coding in this lab.
