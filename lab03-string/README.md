@@ -80,9 +80,9 @@ Create a function with the following signature:
 std::string name_format(std::string);
 ```
 
-Implement \fCname_format\fR so that
+Implement `name_format` so that
 if the string is exactly 2 words separated by a space,
-then assume it is a name, \fCfirstname lastname\fR.
+then assume it is a name, `firstname lastname`.
 Transform the string to:
 
 ```
@@ -99,7 +99,7 @@ You can run tests for a single step with an IDE or ctest,
 for example, `ctest -R step2`.
 
 - Add your new and modified files: `git add src README.md`
-- Save your changes: `git commit -m 'finished lab3'`
+- Save your changes: `git commit -m 'finish lab3'`
 - Submit your work for grading: `git push`
 
 ## Reflection
