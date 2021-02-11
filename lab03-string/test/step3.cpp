@@ -25,7 +25,17 @@ SCENARIO( "Format a string using US phone numer rules if the text appears to be 
         CHECK( phone_format("woot!") == "Not a phone number." );
       }
     }
-
+    
+    WHEN( "strings contain exactly 10 digits, but some are not digits" ) {
+      THEN( "return 'Not a phone number.'" ) {
+        REQUIRE( phone_format("a558675309") == "Not a phone number." );
+        REQUIRE( phone_format("555606084?") == "Not a phone number." );
+        REQUIRE( phone_format("a bcdefgh?") == "Not a phone number." );
+        REQUIRE( phone_format(" 55867530 ") == "Not a phone number." );
+        REQUIRE( phone_format("(55867530)") == "Not a phone number." );
+      }
+    }
+    
   }
 
   GIVEN( "empty strings" ) {
