@@ -70,9 +70,7 @@ Ensure invalid times are caught.
 - Valid `period` values are `a` and `p`
 
 If an invalid parameter is detected, set the error bits
-and continue to populate the time struct with the invalid data
-anyweays.
-
+and continue to populate the time struct with the invalid data.
 
 ### 4. Function display
 Create a function with the following signature:
