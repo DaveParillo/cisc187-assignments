@@ -24,6 +24,22 @@ SCENARIO( "scale a triangle") {
         REQUIRE( triangle.c  == doctest::Approx(2.5));
       }
     }
+    WHEN( "the scale factor == 0" ) {
+      mesa::scale(triangle,0.0f);
+      THEN( "a {3,4,5} triangle should be returned" ) {
+        CHECK( triangle.a  == doctest::Approx(3));
+        CHECK( triangle.b  == doctest::Approx(4));
+        REQUIRE( triangle.c  == doctest::Approx(5));
+      }
+    }
+    WHEN( "the scale factor == 0.01" ) {
+      mesa::scale(triangle,0.01f);
+      THEN( "a tiny triangle should be returned" ) {
+        CHECK( triangle.a  == doctest::Approx(0.03));
+        CHECK( triangle.b  == doctest::Approx(0.04));
+        REQUIRE( triangle.c  == doctest::Approx(0.05));
+      }
+    }
   }
 }
 

@@ -55,6 +55,14 @@ SCENARIO( "validate invariants of make_triple") {
         CHECK( result.c  == 0);
       }
     }
+    WHEN( "n and m are equal" ) {
+      auto result = mesa::make_triple(0,0);
+      THEN( "a triple = {0,0,0} should be returned" ) {
+        CHECK( result.a  == 0);
+        CHECK( result.b  == 0);
+        CHECK( result.c  == 0);
+      }
+    }
     WHEN( "n < 0" ) {
       auto result = mesa::make_triple(-3,8);
       THEN( "a triple = {0,0,0} should be returned" ) {
@@ -63,8 +71,32 @@ SCENARIO( "validate invariants of make_triple") {
         REQUIRE( result.c  == 0);
       }
     }
+    WHEN( "n is 0" ) {
+      auto result = mesa::make_triple(0,8);
+      THEN( "a triple = {0,0,0} should be returned" ) {
+        CHECK( result.a  == 0);
+        CHECK( result.b  == 0);
+        REQUIRE( result.c  == 0);
+      }
+    }
+    WHEN( "m is 0" ) {
+      auto result = mesa::make_triple(5,0);
+      THEN( "a triple = {0,0,0} should be returned" ) {
+        CHECK( result.a  == 0);
+        CHECK( result.b  == 0);
+        REQUIRE( result.c  == 0);
+      }
+    }
     WHEN( "m < 0" ) {
       auto result = mesa::make_triple(13,-8);
+      THEN( "a triple = {0,0,0} should be returned" ) {
+        CHECK( result.a  == 0);
+        CHECK( result.b  == 0);
+        REQUIRE( result.c  == 0);
+      }
+    }
+    WHEN( "both n and m < 0" ) {
+      auto result = mesa::make_triple(-13,-8);
       THEN( "a triple = {0,0,0} should be returned" ) {
         CHECK( result.a  == 0);
         CHECK( result.b  == 0);
