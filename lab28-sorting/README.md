@@ -7,7 +7,7 @@ total data movements, and
 total execution time in milliseconds.
 You must apply your understanding of the general properties of the algorithms
 (and in some cases of the code used to implement them)
-to determine which algorithm is associated with each button.
+to determine which algorithm is associated with each sort option.
 
 A secondary objective of this lab is for you to gain experience writing a concise,
 but complete analysis of a system.
@@ -41,27 +41,20 @@ The sorting algorithms under study this week include (in alphabetical order):
 
 ## Steps
 
-### 1. Download sort program
-Download `sort-lab.jar` found in this directory.
-It is an executable GUI program, so don't run this program
-by ssh'ing into the Mesa server.
-
-You need to download this program and run it locally on a computer
-with Java installed.
+### 1. Explore sort program
+Run the program `sort-detective` installed on the Mesa server.
+It should be in your path.
 
 Make sure you can run this program and play with it a bit.
 
-Notice that the button names do not give any indication which sort
+The **first** thing you should do is run `sort-detective -h`
+and understand the options available.
+
+Notice that the sort option names do not give any indication which sort
 they will execute.
-Notice also, that if you create a small list,
-then that list is shown to you in the console window.
-In the unlikely event that a sort fails (oops!),
-a message will appear there as well.
-
-
 
 ### 2. Make a plan
-Devise a plan which will enable you to match an algorithm to a button name.
+Devise a plan which will enable you to match an algorithm to a sort name.
 
 It may make sense to try to divide the sorts into initial groups and
 then to work on each group separately.
@@ -75,12 +68,12 @@ so it is up to you to record results as you go.
 
 ## 4. Document results
 Describe the results of your experiment in a summary document.
-Begin with a two column table listing each button by name and
-the sort that goes with it.
+Begin with a two column table listing each sort option by name
+(alpha, beta, etc.) and the sort that goes with it.
 
 **Ensure you justify your results!!**
 
-Simply listing which buttons perform which sorts is not enough to
+Simply listing which options perform which sorts is not enough to
 earn credit.
 
 **Collecting data**
@@ -91,6 +84,11 @@ The program will provide the following data, as an example:
 | ---        |  ---     | ----  | ----------- | --------- | --------------- |
 |32 | random | alpha | 496 | 687 | 0 |
 
+The program can provide data as plain text,
+in CSV format suitable for copying into a spreadsheet,
+and in markdown format, suitable for adding to a document on GitHub.
+
+
 **Writing Notes**
 
 There is no coding in this lab.
@@ -99,9 +97,10 @@ the quality of the writing of the report.
 This includes the completeness of the report,
 the clarity (and grammar) of the writing, and general presentation.
 
-Some of the sorts are very difficult to distinguish.
+Some of the sorts are difficult to distinguish.
 A carefully outlined experiment may compensate for an error in these cases
-if the writing makes it clear that your conclusions/guesses are substantiated by the data.
+if the writing makes it clear that your conclusions 
+and/or guesses are substantiated by the data.
 
 Finally, remember that your report needn't detail every experiment you ran.
 Provide sufficient information to justify your conclusions.
@@ -113,8 +112,8 @@ rather they are graded on **quality & correctness**.
 In fact, an extremely long report is an excellent indication you
 probably don’t know what you are doing.
 Plus you open yourself up to more opportunities to lose points due to mistakes.
-After you learn the matching,
-you might consider whether there was a shorter way to arrive at your conclusion.
+After you discover the matching,
+you might consider if there was a shorter way to arrive at your conclusion.
 
 ## Turnitin
 Don't forget to commit your documents and notes when you are done.
