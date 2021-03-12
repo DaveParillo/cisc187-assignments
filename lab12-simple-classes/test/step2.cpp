@@ -4,7 +4,7 @@
 #include <vector>
 
 #include <doctest.h>
-#include <lab14.h>
+#include <lab12.h>
 
 SCENARIO( "Test Clock class") {
   WHEN( "a clock is created" ) {

@@ -9,19 +9,19 @@ Only class `clock` needs to reside in namespace mesa.
 Ensure all class data is private and implement the following:
 
 ### 1. Create files
-Create the files `lab14.h` and `lab14.cpp`.
+Create the files `lab12.h` and `lab12.cpp`.
 
 ### 2. Class `clock`
-Define a class `clock` in file `lab14.h`.
+Define a class `clock` in file `lab12.h`.
 - It should have 1 member to store the time in a `double`.
 - Add two functions to the class named `time`.
   One to change and one to retrieve the time.
-- Implement the class in `lab14.cpp`.
+- Implement the class in `lab12.cpp`.
 
 Don't forget to definer this in the mesa namespace.
 
 ### 3. Class `complex`
-Define a class `complex` in file `lab14.h`.
+Define a class `complex` in file `lab12.h`.
 - Add two `double` member variables: 
   one for the real part of the number and one for the imaginary part
 - Create a default constructor to initialize the number to (0,0).  
@@ -30,16 +30,16 @@ Define a class `complex` in file `lab14.h`.
   `(double real, double imaginary)`.
 - Add functions to retrieve the complex value components
   (real part and imaginary part) name these functions `real` and `imaginary`.
-- Implement the class in `lab14.cpp`.
+- Implement the class in `lab12.cpp`.
 ### 4. Class `truck`
-Define a class `truck` in file `lab14.h`.
+Define a class `truck` in file `lab12.h`.
 - Define a `uint16_t` member variable to store the number of tires on the vehicle.  
   Create a default constructor to initialize the tires to 6.
 - Create a one argument constructor to initialize the tires to a provided value.
 - Add a `void` function `pop_tire` that reduces the number of tires by 1.  
   Do not allow this function to reduce the number when the number of tires is already 0.
 - Add a `uint16_t` function `tires` that returns the number of tires.
-- Implement the class in `lab14.cpp`.
+- Implement the class in `lab12.cpp`.
 ### 5. Class `dog`
 Create a `dog` class from the following `struct`:
 
@@ -53,7 +53,7 @@ Create a `dog` class from the following `struct`:
 ```
 
 - Refactor the `struct` into a `class` in 
-  file `lab14.h`.  
+  file `lab12.h`.  
   Make `name` and `sz` private.
 - Add a constructor so that the dog name and  size can be set when a dog is created.
 - Add default values for your dog class: `"Fido"` and `dog_size::MEDIUM`.

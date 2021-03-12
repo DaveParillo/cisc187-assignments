@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
 #include <doctest.h>
-#include <lab14.h>
+#include <lab12.h>
 
 SCENARIO( "Test Dog class") {
   
