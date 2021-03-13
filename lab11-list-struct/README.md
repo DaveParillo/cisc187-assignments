@@ -10,6 +10,7 @@ C++ extends the capabilities of a C `struct`.
 Today we will start exploring that in C++11,
 a `struct` can contain both data, constructors, and functions.
 
+An important part of this lab is implementing your functions in the cpp file.
 
 ## Steps
 Implement the following:
